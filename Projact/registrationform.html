@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+    <style>
+        main{
+            display: flex;
+            flex-direction: column;
+            width: 400px;
+            margin: auto;
+            gap: 10px;
+        }
+        label{
+            font-weight: bold;
+        }
+        input[type="text"], input[type="email"], input[type="tel"], input[type="date"]{
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+        button{
+            padding: 10px;
+            background-color: blue;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        #id{
+            text-align: center;
+            text-decoration: underline;
+        }
+    </style>
+
+</head>
+<body>
+    <header><h1 id="id">Registration form</h1></header>
+    <main>
+        <label for="name">Student Name:-</label>
+        <input type="text"  name="name" id="name" placeholder="Enter name...">
+        <label for="father">Father's Name:-</label>
+        <input type="text" name="father" id="father" placeholder="Enter your father's name"><br>
+        <label for="mother">Mother's Name:-</label>
+        <input type="text" name="mother" id="mother" placeholder="Enter your mother's name">
+        <label for="email">Email:-</label>
+        <input type="email" name="email" id="email" placeholder="Enter your email"><br>
+        <label for="phone">Phone Number:-</label>
+        <input type="tel" name="phone" id="phone" placeholder="Enter your phone number">
+        <label for="address">Address</label>
+        <input type="text" name="address" id="address" placeholder="Enter address"><br>
+        <label for="dob">Date of Birth</label>
+        <input type="date" id="dob" name="dob" placeholder="Enter your date of Birth"><br>
+        Male: <input type="radio"name="gender"value = "male">
+        Female: <input type="radio" name="gender" value="female"><br>
+        Other: <input type="radio" name="gender" value="Other"><br>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, assumenda repudiandae! Vero et veritatis consequuntur fuga nihil odio odit maiores non? Ullam illum dolores hic odit voluptate ea est voluptatibus, aliquam quae adipisci provident maxime eum ut perferendis? Consectetur sed laborum repellat, tempore ea recusandae aliquid ratione, nihil aut voluptates facilis sint eveniet consequuntur dignissimos, eum odio! Laboriosam ad libero distinctio, repellendus placeat quod ullam suscipit inventore, ex ducimus rerum temporibus nostrum asperiores sunt, dolorum nam ipsa obcaecati excepturi. Quasi, dicta aspernatur reprehenderit molestias quo animi, consequuntur, commodi non cumque ea maiores. Rem tenetur ab nemo ipsam excepturi voluptate similique!</p>
+        <label for="signature">Parent Signature</label>
+        <input type="text" name="signature" id="signature" placeholder="parent signature">
+        <label for="signature">Teacher Signature</label>
+        <input type="text" name="signature" id="signature" placeholder="teacher signature"><br>
+        <button type="submit">Register</button>
+
+        <hr>
+    </main>
+</body>
+</html>

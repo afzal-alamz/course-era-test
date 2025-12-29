@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practose set</title>
+    <style>
+        .bad_button{
+            background-color: rgb(40, 227, 40);
+            border-radius: 10px;
+            
+        }
+        .wish_button{
+            padding: 5px 35px;
+            border: 2px solod black;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <button class="bad_button" onclick="cartQuantity=cartQuantity+1; document.querySelector('#cart_summary').innerText = `Your bag has'${cartQuantity}'items`;" >Add to bag</button>
+    <button class="wish_button" onclick="cartQuantity=cartQuantity-1; document.querySelector('#cart_summary').innerText = `Your bag has'${cartQuantity}'items`;">Move to Wishlist</button>
+    <button class="bad_button" onclick="cartQuantity=cartQuantity+2; document.querySelector('#cart_summary').innerText = `Your bag has'${cartQuantity}'items`;">Add 1+1 sale item</button>
+    <h1 id="cart_summary"></h1>
+
+    <script>
+       let cartQuantity=0;
+       document.querySelector('#cart_summary').innerText = `Your bag has'${cartQuantity}'items`;
+    </script>
+</body>
+</html>
